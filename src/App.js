@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Switch, Route, HashRouter as Router} from 'react-router-dom';
+import Home from "./Home";
+import {i18nConfig} from "./config";
+import {IntlProvider} from "react-intl";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const HomeView = () => (<IntlProvider
+  locale={i18nConfig.locale}
+  defaultLocale={i18nConfig.locale}
+  messages={i18nConfig.messages}
+>
+  <Home />
+</IntlProvider>);
+
+const App = () => (
+  <Router>
+    <Switch>
+      <Route exact path="/" component={HomeView} />
+      <Route exact path="/universal" component={HomeView} />
+    </Switch>
+  </Router>);
 
 export default App;
