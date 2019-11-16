@@ -1,0 +1,65 @@
+{
+  "home.welcome": {
+    "defaults": "Welcome to {name}!",
+    "origin": [
+      [
+        "src/HomeLingui.js",
+        11
+      ]
+    ]
+  },
+  "home.declarative": {
+    "defaults": "Declarative",
+    "origin": [
+      [
+        "src/HomeLingui.js",
+        17
+      ]
+    ]
+  },
+  "home.declarative.p1": {
+    "defaults": "{name} makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
+    "origin": [
+      [
+        "src/HomeLingui.js",
+        21
+      ]
+    ]
+  },
+  "home.declarative.p2": {
+    "defaults": "Declarative views make your code more predictable and easier to debug.",
+    "origin": [
+      [
+        "src/HomeLingui.js",
+        28
+      ]
+    ]
+  },
+  "home.component-based": {
+    "defaults": "Component-Based",
+    "origin": [
+      [
+        "src/HomeLingui.js",
+        36
+      ]
+    ]
+  },
+  "home.component-based.p1": {
+    "defaults": "Build encapsulated components that manage their own state, then compose them to make complex UIs.",
+    "origin": [
+      [
+        "src/HomeLingui.js",
+        39
+      ]
+    ]
+  },
+  "home.component-based.p2": {
+    "defaults": "Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.",
+    "origin": [
+      [
+        "src/HomeLingui.js",
+        42
+      ]
+    ]
+  }
+}
